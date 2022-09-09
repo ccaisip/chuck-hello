@@ -1,8 +1,8 @@
 pipeline {
-    agent { label 'linux64' }
+    agent any
 
     environment {
-        CONNECT = 'https://coverity.chuckaude.com:8443'
+        CONNECT = 'https://coverity.demo.com:8443'
         PROJECT = 'hello-java'
         BLDCMD = 'mvn -B package -DskipTests'
         CHECKERS = '--webapp-security --enable-callgraph-metrics'
