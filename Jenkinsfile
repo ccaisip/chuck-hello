@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        CONNECT = 'https://coverity.demo.com:8443'
-        PROJECT = 'hello-java'
+        CONNECT = 'https://testing.coverity.synopsys.com'
+        PROJECT = 'ccaisip-test'
         BLDCMD = 'mvn -B package -DskipTests'
         CHECKERS = '--webapp-security --enable-callgraph-metrics'
         COVERITY_NO_LOG_ENVIRONMENT_VARIABLES = '1'
